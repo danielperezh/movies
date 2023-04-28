@@ -1,0 +1,59 @@
+<section class="d-flex aling-item-center justify-content-center img">
+  <form [formGroup]="formLogin">
+    <div class="row mt-4 text-center">
+      <div class="col-12">
+        <h1 class="titulo">Iniciar Sesion</h1>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <input
+            type="text"
+            class="input"
+            formControlName="username"
+            name="username"
+            placeholder="Nombre de Usuario"
+            autocomplete="off"
+          />
+          <div
+            *ngIf="
+              formLogin.controls['username'].errors &&
+              formLogin.controls['username'].touched
+            "
+            class="text-danger mt-1"
+          >
+            <div *ngIf="formLogin.controls['username'].errors['required']">
+              El nombre de usuario es requerido
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-2">
+        <div class="form-group">
+          <input
+            type="password"
+            class="input"
+            formControlName="password"
+            placeholder="Contraseña"
+            name="password"
+          />
+          <div
+            *ngIf="
+              formLogin.controls['password'].errors &&
+              formLogin.controls['password'].touched
+            "
+            class="text-danger mt-1"
+          >
+            <div *ngIf="formLogin.controls['password'].errors['required']">
+              La contraseña es requerida
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-2">
+        <button type="button" (click)="login()" class="btn">
+          Iniciar Sesion
+        </button>
+      </div>
+    </div>
+  </form>
+</section>

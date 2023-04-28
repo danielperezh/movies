@@ -1,0 +1,31 @@
+<app-cabecera></app-cabecera>
+<section class="detalle">
+  <div *ngIf="movie" class="container-movie">
+    <ng-container *ngIf="movie">
+      <div class="movie-detail-container">
+        <div class="titulo">
+          <h1>{{ movie.title }}</h1>
+        </div>
+        <div class="movie-detail-image">
+          <img [src]="imgBaseUrl + movie.backdrop_path" alt="{{ movie.title }}">
+        </div>
+        <div class="movie-detail-info">
+          <div class="genres">
+          <strong>Generos: </strong>
+            <div *ngFor="let genre of movie.genres" class="genre">{{ genre.name }}</div>
+          </div>
+          <p class="movie-detail__release-date"><strong>Fecha de lanzamiento: </strong><span>{{ movie.release_date }}</span></p>
+          <p><strong>Duración: </strong> {{ movie.runtime }} minutos</p>
+          <strong>Descripcion:</strong>
+          <p class="movie-detail-description">{{ movie.overview }}</p>
+          <div class="movie-detail-popularity">
+            <strong>Popularidad: </strong>
+            <span>{{ movie.popularity }}</span>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>
+
+

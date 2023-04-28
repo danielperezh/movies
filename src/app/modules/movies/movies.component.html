@@ -1,0 +1,22 @@
+<app-spinner></app-spinner>
+<app-cabecera></app-cabecera>
+<section class="aling-item-center justify-content-center movies pt-5">
+  <div>
+    <div class="movie-card-container">
+      <div
+        *ngFor="let movie of movies.results"
+        class="movie-card"
+        (click)="seeDetail(movie.id)"
+      >
+        <img [src]="imgBaseUrl + movie.poster_path" alt="{{ movie.title }}" />
+        <div class="movie-card__info">
+          <h3 class="movie-card__title">{{ movie.title }}</h3>
+          <p class="movie-card__release-date">
+            {{ movie.release_date | date }}
+          </p>
+          <p class="movie-card__overview">{{ movie.overview }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

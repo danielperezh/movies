@@ -1,0 +1,92 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.titulo {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f0607d0;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #333333;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #333333;
+  color: #fff;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #7e7c7c;
+}
+
+.btn {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #de0e17;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #f82525;
+  color: #fff;
+}
+
+.img {
+  /* Definir el degradado que deseas aplicar */
+background: linear-gradient( 115deg, rgba(31, 31, 46, 0.8), rgba(91, 91, 117, 0.7) ), url(../assets/img/loginFondo.png);
+
+/* Ajustar el tamaño de la imagen de fondo */
+background-size: cover;
+
+/* Centrar la imagen de fondo */
+background-position: center center;
+
+}
+
+input.ng-invalid.ng-touched {
+  border: solid 2px rgb(139, 13, 13);
+}
+.text-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  font-size: 0.8rem;
+  padding: 4px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+/* .text-danger {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+} */
