@@ -1,5 +1,7 @@
 # Movies
 
+![Logo de Mi Proyecto](https://github.com/danielperezh/movies/blob/main/movies.webp)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
 ## Login a demo
