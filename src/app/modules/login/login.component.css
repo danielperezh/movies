@@ -64,7 +64,7 @@ form {
 
 .img {
   /* Definir el degradado que deseas aplicar */
-background: linear-gradient( 115deg, rgba(31, 31, 46, 0.8), rgba(91, 91, 117, 0.7) ), url(../assets/img/loginFondo.png);
+background: linear-gradient( 115deg, rgba(31, 31, 46, 0.8), rgba(91, 91, 117, 0.7) ), url(../../../assets/img/loginFondo.png);
 
 /* Ajustar el tamaño de la imagen de fondo */
 background-size: cover;
